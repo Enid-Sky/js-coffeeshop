@@ -35,6 +35,9 @@ const setProgressAndStatus = (progressVal, statusMsg) => {
 };
 
 
-//
-// Add your event handlers below.
-//
+// Add coffee to the bar
+$('.add-to-order').on('click', () =>{
+    addItemToCart('Coffee');
+    incrementCartTotal(1.50);
+});
+
