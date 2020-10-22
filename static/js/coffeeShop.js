@@ -41,3 +41,8 @@ $('.add-to-order').on('click', () =>{
     incrementCartTotal(1.50);
 });
 
+// increment items sold to display and reset cart
+$('#place-order').on('click', () => {
+    incrementCoffeeSold($('#cart-items').children().length);
+    resetCart();
+});
